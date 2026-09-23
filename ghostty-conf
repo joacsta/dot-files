@@ -1,0 +1,138 @@
+# #tomorrow
+# background = #000000
+# foreground = #eaeaea
+# selection-background = #424242
+# selection-foreground = #eaeaea
+# cursor-color = #eaeaea
+# cursor-text = #000000
+# palette = 0=#000000
+# palette = 1=#d54e53
+# palette = 2=#b9ca4a
+# palette = 3=#e7c547
+# palette = 4=#7aa6da
+# palette = 5=#c397d8
+# palette = 6=#70c0b1
+# palette = 7=#ffffff
+# palette = 8=#000000
+# palette = 9=#d54e53
+# palette = 10=#b9ca4a
+# palette = 11=#e7c547
+# palette = 12=#7aa6da
+# palette = 13=#c397d8
+# palette = 14=#70c0b1
+# palette = 15=#ffffff
+
+# ##github
+# background = #010409
+# foreground = #e6edf3
+# selection-background = #264f78
+# selection-foreground = #e6edf3
+# cursor-color = #e6edf3
+# cursor-text = #010409
+# palette = 0=#484f58
+# palette = 1=#ff7b72
+# palette = 2=#3fb950
+# palette = 3=#d29922
+# palette = 4=#58a6ff
+# palette = 5=#bc8cff
+# palette = 6=#39c5cf
+# palette = 7=#b1bac4
+# palette = 8=#6e7681
+# palette = 9=#ffa198
+# palette = 10=#56d364
+# palette = 11=#e3b341
+# palette = 12=#79c0ff
+# palette = 13=#d2a8ff
+# palette = 14=#56d4dd
+# palette = 15=#ffffff
+
+# background = 100f0f
+# foreground = fce8c3
+# selection-background = fce8c3
+# selection-foreground = 1c1b19
+# cursor-color = fbb829
+# cursor-text = 1c1b19
+# palette = 0=#1c1b19
+# palette = 1=#ef2f27
+# palette = 2=#519f50
+# palette = 3=#fbb829
+# palette = 4=#2c78bf
+# palette = 5=#e02c6d
+# palette = 6=#0aaeb3
+# palette = 7=#baa67f
+# palette = 8=#918175
+# palette = 9=#f75341
+# palette = 10=#98bc37
+# palette = 11=#fed06e
+# palette = 12=#68a8e4
+# palette = 13=#ff5c8f
+# palette = 14=#2be4d0
+# palette = 15=#fce8c3
+#
+
+background = 100f0f
+foreground = cccccc
+selection-background = 5f4e3b
+selection-foreground = cccccc
+cursor-color = cccccc
+cursor-text = 292a2b
+palette = 0=#000000
+palette = 1=#ff2c6d
+palette = 2=#19f9d8
+palette = 3=#ffb86c
+palette = 4=#45a9f9
+palette = 5=#ff75b5
+palette = 6=#b084eb
+palette = 7=#cdcdcd
+palette = 8=#757575
+palette = 9=#ff2c6d
+palette = 10=#19f9d8
+palette = 11=#ffcc95
+palette = 12=#6fc1ff
+palette = 13=#ff9ac1
+palette = 14=#bcaafe
+palette = 15=#e6e6e6
+#
+# Font
+font-family = "Google Sans Code NF"
+font-style = Regular
+font-size = 10
+
+# Font-feature
+font-feature = -calt
+
+# Window
+window-theme = ghostty
+window-padding-x = 1
+window-padding-y = 1
+confirm-close-surface=false
+resize-overlay = never
+gtk-toolbar-style = flat
+window-padding-balance = true
+
+# Cursor styling
+cursor-style = "underline"
+cursor-style-blink = true
+
+# Cursor styling + SSH session terminfo
+# (all shell integration options must be passed together)
+shell-integration-features = no-cursor,ssh-env
+
+# Keyboard bindings
+keybind = shift+insert=paste_from_clipboard
+keybind = control+insert=copy_to_clipboard
+# Send Shift+Enter as CSI-u so TUIs can distinguish it from Enter.
+keybind = shift+enter=csi:13;2u
+# Legacy encoding sends Alt+Shift+Enter the same as Alt+Enter; send CSI-u so tmux can match M-S-Enter.
+keybind = alt+shift+enter=csi:13;4u
+keybind = super+control+shift+alt+arrow_down=resize_split:down,100
+keybind = super+control+shift+alt+arrow_up=resize_split:up,100
+keybind = super+control+shift+alt+arrow_left=resize_split:left,100
+keybind = super+control+shift+alt+arrow_right=resize_split:right,100
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95
+
+# Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
+async-backend = epoll
+
